@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lustria&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    background-image: url(../assets/fundo.png);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerda {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 300px;
+}
+
+main {
+    width: 25%;
+    height: 50vh;
+}
+
+.about {
+    width: 75%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    gap: 50px;
+}
+
+menu {
+    width: 90px;
+    height: 90px;
+    img {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 192px;
+    height: 48px;
+    background-image: linear-gradient(#d9daf1, #bec3e2);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    transition: .5s ease-in;
+    filter: brightness(50%);
+}
+
+.btn:hover {
+    filter: brightness(100%);
+    box-shadow: 0px 0px 8px #4e5aa0;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+menu {
+    width: 64px;
+    height: 64px;
+    img {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+menu:hover {
+    animation-name: logo;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes logo {
+    0% {
+        transform: rotate(0deg);
+        filter: drop-shadow(0px 0px 0px white);
+    }
+    25% {
+        filter: drop-shadow(0px 0px 12px white);
+    }
+    50% {
+        filter: drop-shadow(0px 0px 0px white);
+    }
+    75% {
+        filter: drop-shadow(0px 0px 12px white);
+    }
+    100% {
+        transform: rotate(360deg);
+        filter: drop-shadow(0px 0px 0px white);
+    }
+}
